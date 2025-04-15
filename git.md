@@ -38,16 +38,18 @@ git status
 ```
 
 ## Authentication Methods
-### Primary: Passkey (Recommended)
-- Using 1Password passkey "1passwdGitHub"
-- Created Apr 15, 2025
-- Most secure option
-- Works across devices with 1Password
+### Web Browser Access
+- Primary: 1Password Passkey "1passwdGitHub" (Created Apr 15, 2025)
+  - Used for github.com web login only
+  - Most secure option for website access
+  - Works across devices with 1Password
 
-### Backup: SSH/PAT
-- SSH Key: ~/.ssh/id_ed25519
-- PAT stored in system keychain
-- No need to re-authenticate unless:
-  - PAT revoked
-  - SSH keys changed
-  - Using different computer 
+### CLI and Git Operations
+- SSH Key: ~/.ssh/id_ed25519 (for git push/pull)
+- Personal Access Token (for GitHub CLI)
+  - Stored in system keychain
+  - Required for 'gh' command line operations
+  - No need to re-authenticate unless:
+    - Token is revoked
+    - SSH keys changed
+    - Using different computer 
