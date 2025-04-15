@@ -37,7 +37,14 @@ git pull
 git status
 ```
 
-## Authentication Notes
+## Authentication Methods
+### Primary: Passkey (Recommended)
+- Using 1Password passkey "1passwdGitHub"
+- Created Apr 15, 2025
+- Most secure option
+- Works across devices with 1Password
+
+### Backup: SSH/PAT
 - SSH Key: ~/.ssh/id_ed25519
 - PAT stored in system keychain
 - No need to re-authenticate unless:
